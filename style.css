@@ -1,6 +1,31 @@
-#presentation{
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url('791099.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    align-content: flex-end;
+    position: absolute;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.contain{
+    padding-right: 100px;  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+p{
+    font-family: sans-serif;
+    font-weight: 500;
 }
