@@ -18,7 +18,9 @@ body{
     align-items: flex-end;
     justify-content: center;
 }
-.contain{
+.content{
+    background-color: rgba(128, 0, 255, 0.3);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding-right: 100px;  
     display: flex;
     flex-direction: column;
