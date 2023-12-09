@@ -27,6 +27,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 600px) and (max-width: 900px) {
+	.navbar{
+        display: none;
+	}
+}
 .content{
     display: flex;
     position: relative;
@@ -39,6 +44,11 @@ body{
     background-color: #413c3c;
     flex-direction: column;
     justify-content: center;
+}
+@media screen and (max-width: 600px) and (max-width: 900px) {
+	.content{
+        width: 100%;
+	}
 }
 .filtre{
     z-index: 1;
