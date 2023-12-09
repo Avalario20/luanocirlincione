@@ -1,3 +1,14 @@
+@media screen and (max-width: 1000px){
+	.navbar{
+        display: none;
+	}
+    .content{
+        width: 100%;
+	}
+    .MenuBurger{
+        display: static;
+    }
+}
 body{
     --font-familly: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --first-color: #1e1d1d;
@@ -27,11 +38,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 600px) and (max-width: 900px) {
-	.navbar{
-        display: none;
-	}
-}
 .content{
     display: flex;
     position: relative;
@@ -44,11 +50,6 @@ body{
     background-color: #413c3c;
     flex-direction: column;
     justify-content: center;
-}
-@media screen and (max-width: 600px) and (max-width: 900px) {
-	.content{
-        width: 100%;
-	}
 }
 .filtre{
     z-index: 1;
@@ -88,6 +89,7 @@ a:hover{
     text-decoration: none;
 }
 .MenuBurger{
+    display: none;
     position: fixed;
     top: 10px;
     right: 10px;
