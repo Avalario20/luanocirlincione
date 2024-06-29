@@ -147,6 +147,61 @@ p{
     background-color: rgb(56, 56, 56);
     color: var(--text-color);
 }
+.contentContact{
+    display: flex;
+    position: relative;
+    background-image: url(791099.jpg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    background-color: #413c3c;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contentContact h2{
+    font-family: var(--font-familly);
+    color: #7f7d7d;
+}
+.GitHub, .Email{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2522228d;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 79.1px 23px #272523 inset;
+}
+.GitHub a{
+    color: var(--text-color);
+    font-family: var(--font-familly);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.Email a{
+    color: var(--text-color);
+    font-family: var(--font-familly);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.Email .email{
+    font-size: 15px;
+}
+.Email a:hover{
+    color: #565050;
+}
+.GitHub a:hover{
+    color: #565050;
+}
 @media screen and (max-width: 1000px){
 	.navbar{
         display: none;
