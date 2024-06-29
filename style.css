@@ -40,6 +40,28 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+@keyframes led-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.profession {
+    display: inline-block; /* Nécessaire pour l'animation */
+    white-space: nowrap; /* Empêche le texte de se plier à la ligne suivante */
+    animation: led-scroll 10s linear infinite;
+    position: relative;
+}
+
+.titles {
+    overflow: hidden;
+    width: 395px; /* Définir la largeur de la zone de l'animation */
+    position: relative;
+}
+
 .filtre{
     z-index: 1;
     position: absolute;
@@ -132,20 +154,27 @@ p{
     flex-direction: column;
 }
 .social li{
-    cursor: pointer;
+
     font-family: var(--font-familly);
     color: var(--text-color);
-    background-color: var(--first-color);
+    /* background-color: var(--first-color); */
     list-style: none;
     text-align: center;
     border-radius: 100%;
     padding: 20px 20px;
     margin: 10px;
 }
-.social li:hover{
+.social a:hover{
     transition: all 0.5s ease-out 0s;
-    background-color: rgb(56, 56, 56);
+    background-color: rgba(139, 139, 139, 0.271);
     color: var(--text-color);
+}
+#github{
+    cursor: pointer;
+    background-image: url(github.png);
+    background-size: cover;
+    width: 0px;
+    height: 0px;
 }
 .contentContact{
     display: flex;
@@ -175,7 +204,10 @@ p{
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    box-shadow: 4px 4px 79.1px 23px #272523 inset;
+    box-shadow: inset 0px 0px 20px 20px #1414146e;
+}
+.Email h2{
+    margin-top: -20px;
 }
 .GitHub a{
     color: var(--text-color);
@@ -202,15 +234,38 @@ p{
 .GitHub a:hover{
     color: #565050;
 }
+.navMobile{
+    display: none;
+}
 @media screen and (max-width: 1000px){
 	.navbar{
         display: none;
 	}
     .content{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    .containerContact{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+	}
+    .content ul{
+        list-style: none;
+    }
+    .contentContact{
         width: 100%;
         height: 100vh;
 	}
-    .MenuBurger{
+    .navMobile{
         display: block;
     }
+    /* .MenuBurger{
+        display: block;
+    } */
 }
